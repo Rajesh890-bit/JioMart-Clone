@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Landing Page OR HOME</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+
+  <!-- ---------------------------------LET'S GO -------------------------------->
+
+  <body>
+    <div id="navbar">
+      <div>
+        <span class="material-icons menu">menu</span>
+      </div>
+      <div id="MainLogo">
+        <div onclick="refresh()">
+          <img src="../image/shoply.jpg" alt="shoply" />
+        </div>
+      </div>
+      <div id="Search">
+        <input
+          type="text"
+          placeholder="Search essential, groceries, and more..."
+        />
+      </div>
+      <div class="signIn Inside Nav">
+        <span class="material-icons">perm_identity</span>
+        <div class="navBar signin and signup">
+          <div id="signUp" onclick="goToSignIN()">Sign In / Sign Up</div>
+          <div id="ddl">
+            <div id="in"></div>
+            <div id="ddl2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="cart navigationinnerDiv">
+        <span class="material-icons">shopping_cart</span>
+        <div class="navText">Cart</div>
+      </div>
+    </div>
+
+    <!--------------- OPTIOnal ----------------->
+    <div id="catagoryNavbar">
+      <ul>
+        <li>delivery to<br />40020</li>
+        <li>groceries</li>
+        <li>premium fruits</li>
+        <li>Home & Kitchen</li>
+        <li>Fashion</li>
+        <li>Fashion</li>
+        <li>Fashion</li>
+        <li>Fashion</li>
+        <li>Fashion</li>
+      </ul>
+    </div>
+    <!--------------- OPTIOnal ----------------->
+
+    <!-------------- product page start ----------->
+
+    <div id="productPage">
+      <div id="slideContainer"></div>
+      <div id="poster1"></div>
+      <div id="poster2"></div>
+      <div id="poster3"></div>
+    </div>
+  </body>
+</html>
+<script src="../js/index.js"></script>
