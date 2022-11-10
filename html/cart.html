@@ -4,21 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main Landing Page OR HOME</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="../css/index.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cart.css" />
   </head>
-
-  <!-- ---------------------------------LET'S GO -------------------------------->
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
   <body>
     <div id="navbar">
       <div>
@@ -182,75 +178,37 @@
     </div>
     <!--------------- OPTIOnal ----------------->
 
-    <!-------------- product page start ----------->
-
-    <div id="productPage">
-      <div id="slideContainer">
-        <div class="mySlides fade">
-          <div class="numbertext"></div>
-          <img
-            src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1667838765_1667233182_Biggest-Savings-on-Selected-Products_1680-x-320.jpg"
-            style="width: 100%"
-          />
-          <div class="text">Caption Text</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext"></div>
-          <img
-            src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1667922746_1667839739_1667755395_Audio-Fest-JioMart-Carousel-Banner-23_08_2022_1.jpg"
-            style="width: 100%"
-          />
-          <div class="text">Caption Two</div>
-        </div>
-
-        <div class="mySlides fade">
-          <div class="numbertext"></div>
-          <img
-            src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1667923749_1667842017_1667755160_Atta-_-Flour_1680x320_4.jpg"
-            style="width: 100%"
-          />
-          <div class="text">Caption Three</div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
+    <div id="headingCart">My Cart</div>
+    <div id="emptyCart">
+      <div>
+        <img
+          width="300px"
+          src="https://www.jiomart.com/msassets/images/emptycart.svg"
+          alt=""
+        />
       </div>
-
-      <!---------------------------------------- Mid section ------------------------------ -->
-
-      <div id="TopSection">
-        <div id="poster1">
-          <img
-            src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1667281294_bLOCK_BUSTER_dEALS_1_Desktop.jpg"
-            alt=""
-          />
+      <h5>Your Cart is empty!</h5>
+      <button onclick="addPro()">Add Products</button>
+    </div>
+    <div id="userProCont">
+      <div id="top"></div>
+      <div id="bot">
+        <h3 id="payment">Payment Details</h3>
+        <div>
+          MRP TOTAL: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="pRc"></span>
         </div>
-        <div id="poster2">
-          <img
-            src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1662531217_Wednesday_Bonus.jpg"
-            alt=""
-          />
-
-          <!------------------------------------- slider2-------------------------------- -->
-
-          <!------------------------------------- slider2 end-------------------------------- -->
+        <div>Product Discount <span id="dSc"></span></div>
+        <div>
+          Total Amount: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="tA"></span>
         </div>
-        <div id="poster3">
-          <img
-            src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1667239568_1665072912_Oct-6_Slim-Banner.jpg"
-            alt=""
-          />
-        </div>
-      </div>
-
-      <!-- <.....MId section end....> -->
-
-      <div id="topDeals12">
-        <h1>TOP DEALS</h1>
-        <div id="topDeals1"></div>
+        <input
+          type="number"
+          placeholder="Enter Your Number Here"
+          id="verifyNumber"
+        />
+        <button onclick="placeOrder()">Place Order</button>
       </div>
     </div>
+    <script src="../js/cart.js"></script>
   </body>
 </html>
-<script src="../js/index.js"></script>
