@@ -1,0 +1,148 @@
+/*.............................. nav bar start ..............................*/
+#navbar {
+    display: grid;
+    grid-template-columns: 5% 10% 60% 12% 8%;
+    grid-gap: 1%;
+    align-items: center;
+    text-align: center;
+    background-color: #008ecc;
+    color: white;
+    padding: 8px;
+    
+}
+
+
+
+
+#MainLogo div img{
+    height: 60px;
+    display: block;
+    width: 80%;
+}
+
+
+#navbar #Search{
+    outline-style: none;
+    display: inline-block;
+} 
+
+
+
+
+ #navbar .navText {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+#navbar input {
+    width: 90%;
+    height: 38px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+}
+
+#navbar .menu {
+    font-size: 35px;
+    cursor: pointer;
+} 
+
+/*.............................. nav bar end  ..............................*/
+
+/* ...............dropdown Nav bar code start............ */
+
+
+#dropDown
+{
+	text-align:center;
+	font-family:helvetica;
+	background-color:lightgray;
+}
+h1
+{
+	margin:0px;
+	margin-top:40px;
+	color:#8181F7;
+	font-size:45px;
+}
+#main_menu
+{
+	background-color:lightgray;
+	float:left;
+	padding:0px;
+	width:700px;
+	height:50px;
+	line-height:50px;
+	margin-left: 100px;
+	border-radius:5px;
+}
+#main_menu .main_list
+{
+	color:white;
+	list-style-type:none;
+	float:left;
+	border-left:1px solid #666;
+	padding-left:27px;
+	padding-right:27px;
+	
+}
+#main_menu .main_list:hover
+{
+	color:#2E9AFE;
+}
+.main_list ul
+{
+	background-color:white;
+	width:600px;
+	position:absolute;
+	left:150px;
+	width:700px;
+	padding:0px;
+	float:left;
+	padding-bottom:10px;
+}
+.main_list ul p
+{
+	color:white;
+	background-color:#2E9AFE;
+	margin:0px;
+	text-align:left;
+	padding-left:10px;
+	font-size:20px;
+	font-weight:bold;
+}
+.main_list ul ol
+{
+	float:left;
+	padding:0px;
+	list-style-type:none;
+	margin-left:30px;
+}
+.main_list ul ol li
+{
+	line-height:25px;
+	font-weight:bold;
+	font-size:16px;
+	color:#2E9AFE;
+}
+.main_list ul ol li:first-of-type 
+{
+    list-style: none;
+    font-size:19px;
+	margin-top:10px;
+	color:#084B8A;
+}
+.main_list:hover ul
+{
+	display:block;
+}
+.main_list ul
+{
+	display:none;
+}
+
+
+/* ...............dropdown Nav bar  code end ............ */
+
