@@ -284,8 +284,8 @@ img {vertical-align: middle;}
 }
 
 .img2:hover {
-  width: 50%;
-  
+  width: 40%;
+  height: 110px;
 }
 
 .btn2 {
@@ -297,4 +297,146 @@ img {vertical-align: middle;}
   border: none;
   cursor: pointer;
   color: white;
+}
+
+
+/* ------------------------Footer Start ----------------- */
+
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  height: 330px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #f3f3f3;
+  ;
+  padding: 40px 0 30px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 15px;
+  color: black;
+  margin-bottom: 25px;
+  font-weight: 200;
+  position: relative;
+  font-weight: 550;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 5px;
+  color: rgb(121, 121, 121);
+  text-decoration: none;
+  font-weight: 300;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  padding-left: 8px;
+}
+
+.right {
+  margin-left: 15%;
+}
+
+.right1 {
+  margin-left: 10%;
+}
+
+.right1 a {
+  text-decoration: none;
+  color: #008ecc;
+  font-weight: 600;
+}
+
+.footer-col p {
+  font-size: 11px;
+  line-height: 15px;
+  text-decoration: none;
+  font-weight: 300;
+  color: rgb(121, 121, 121);
+  margin-bottom: 20px;
+}
+
+.footer-col p span {
+  color: #008ecc;
+}
+
+.bottom {
+  display: flex;
+}
+
+.last {
+  display: flex;
+  margin: 20px 100px;
+  width: 85%;
+  height: 20px;
+  /* padding: 0px */
+}
+
+.last p {
+  margin-bottom: 0px;
+  margin-left: 0%;
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  font-weight: 300;
+  line-height: 15px;
+  float: left;
+
+}
+
+.last span {
+  font-size: 12px;
+  color: black;
+  font-weight: 300;
+  line-height: 15px;
+  float: right;
+  margin-left: 350px;
+}
+
+
+.footer hr {
+  margin-top: 20px;
+  max-width: 1250px;
+}
+
+#loggedIn {
+  margin-top: 0px;
+  font-size: large;
+  color: rgb(120, 221, 120);
+  
+}
+
+#outDiv button {
+  padding: 3px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  background: transparent;
+}
+
+#outDiv button:hover {
+  color: red;
 }

@@ -21,8 +21,10 @@
         <span class="material-icons menu">menu</span>
       </div>
       <div id="MainLogo">
-        <div onclick="refresh()">
-          <img src="../image/shoply.jpg" alt="shoply" />
+        <div>
+          <a href="../html/index.html">
+            <img src="../image/shoply.jpg" alt="shoply" />
+          </a>
         </div>
       </div>
       <div id="Search">
@@ -49,140 +51,13 @@
 
     <!--------------- OPTIOnal ----------------->
 
-    <div id="dropDown">
-      <ul id="main_menu">
-        <li class="main_list">Deliver to<br />40029</li>
-        <li class="main_list">
-          Groceries
-          <ul>
-            <p class="category_header">
-              Buy Any Electronics Item And Get Flat 50% OFF
-            </p>
-            <ol>
-              <li>Mobiles</li>
-              <li>Item1</li>
-              <li>Item2</li>
-              <li>Item3</li>
-              <li>Item4</li>
-              <li>Item5</li>
-            </ol>
-
-            <ol>
-              <li>Tablets</li>
-              <li>Item1</li>
-              <li>Item2</li>
-              <li>Item3</li>
-              <li>Item4</li>
-              <li>Item5</li>
-            </ol>
-          </ul>
-        </li>
-
-        <li class="main_list">
-          Premium Fruits
-          <ul>
-            <p class="category_header">
-              Buy Any Food&Snacks Item And Get Upto 40% OFF
-            </p>
-            <ol>
-              <li>Pulses</li>
-              <li>Item1</li>
-              <li>Item2</li>
-              <li>Item3</li>
-              <li>Item4</li>
-              <li>Item5</li>
-            </ol>
-
-            <ol>
-              <li>Wheat & Oil</li>
-              <li>Item1</li>
-              <li>Item2</li>
-              <li>Item3</li>
-              <li>Item4</li>
-              <li>Item5</li>
-            </ol>
-          </ul>
-        </li>
-
-        <li class="main_list">
-          Home & Kitchen
-          <ul>
-            <p class="category_header">
-              Buy Any Clothing Item And Get Upto 70% OFF
-            </p>
-            <ol>
-              <li>Mens</li>
-              <li>Item1</li>
-              <li>Item2</li>
-              <li>Item3</li>
-              <li>Item4</li>
-              <li>Item5</li>
-            </ol>
-
-            <ol>
-              <li>Kids</li>
-              <li>Item1</li>
-              <li>Item2</li>
-              <li>Item3</li>
-              <li>Item4</li>
-              <li>Item5</li>
-            </ol>
-          </ul>
-        </li>
-
-        <li class="main_list">
-          Fashion
-          <ul>
-            <p class="category_header">Buy Any Book And Get Flat 50% OFF</p>
-            <ol>
-              <li>Self Improvement</li>
-              <li>Item1</li>
-              <li>Item2</li>
-              <li>Item3</li>
-              <li>Item4</li>
-              <li>Item5</li>
-            </ol>
-          </ul>
-        </li>
-
-        <li class="main_list">
-          Fashion
-          <ul>
-            <p class="category_header">Buy Any Book And Get Flat 50% OFF</p>
-            <ol>
-              <li>Self Improvement</li>
-              <li>Item1</li>
-              <li>Item2</li>
-              <li>Item3</li>
-              <li>Item4</li>
-              <li>Item5</li>
-            </ol>
-          </ul>
-        </li>
-
-        <li class="main_list">
-          Fashion
-          <ul>
-            <p class="category_header">Buy Any Book And Get Flat 50% OFF</p>
-            <ol>
-              <li>Self Improvement</li>
-              <li>Item1</li>
-              <li>Item2</li>
-              <li>Item3</li>
-              <li>Item4</li>
-              <li>Item5</li>
-            </ol>
-          </ul>
-        </li>
-      </ul>
-    </div>
     <!--------------- OPTIOnal ----------------->
 
-    <div id="headingCart">My Cart</div>
-    <div id="emptyCart">
+    <div id="headingCart" style="font-size: 40px">My Cart</div>
+    <div id="emptyCart" style="text-align: center">
       <div>
         <img
-          width="300px"
+          height="200px"
           src="https://www.jiomart.com/msassets/images/emptycart.svg"
           alt=""
         />
@@ -193,6 +68,9 @@
     <div id="userProCont">
       <div id="top"></div>
       <div id="bot">
+        <h5 id="coupon">Apply Coupon</h5>
+        <input type="text" placeholder="Add Code Here" id="couponCode" />
+        <button onclick="checkCoupon()">Click Here to Apply Code</button>
         <h3 id="payment">Payment Details</h3>
         <div>
           MRP TOTAL: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="pRc"></span>
