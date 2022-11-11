@@ -190,8 +190,28 @@ function showProductt(d) {
 
 
 
-let LSCartItems = [];
-function addtocart(data) {
-    LSCartItems.push(data);
-    localStorage.setItem("Carts-ItemArray", JSON.stringify(LSCartItems));
+function addtocart(product) {
+    if (localStorage.getItem("Carts-ItemArray") === null) {
+        localStorage.setItem("Carts-ItemArray", JSON.stringify([]));
+    }
+    let array = JSON.parse(localStorage.getItem("Carts-ItemArray"));
+    let present = false;
+
+    array.forEach((pro) => {
+        if (pro.name == product.name) {
+            pro["quantity"]++;
+            present = true;
+        }
+    })
+    if (present) {
+        localStorage.setItem("Carts-ItemArray", JSON.stringify(array));
+    } else {
+        product["quantity"] = 1;
+        array.push(product);
+        localStorage.setItem("Carts-ItemArray", JSON.stringify(array));
+    }
+}
+
+function goToSignIN() {
+    window.location.href = "signUP.html"
 }

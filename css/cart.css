@@ -146,3 +146,57 @@ h1
 
 /* ...............dropdown Nav bar  code end ............ */
 
+
+#top {
+  margin-right: 30px;
+}
+
+#userProCont{
+    display: grid;
+    margin: auto;
+    max-width: 1200px;
+    grid-template-columns: 50% 50%;
+    margin-top: 30px;
+    height: auto;
+  }
+
+#top>div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 5px;
+    background: #fff;
+    color: navy;
+    font-size: large;
+    font-weight: 400;
+    border: lightseagreen;
+    border-radius: 5px;
+    text-align: center;
+  }
+  #top>div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  #bot>button{
+    color: white;
+    border-radius: 10px;
+    background: #008ECC;
+    padding: 5px;
+    height: 30px;
+    border: none;
+  }
+  
+  #bot>div{
+    background: #fff;
+    padding: 10px;
+    color: black;
+    font-size: small;
+    font-weight: bold;
+  }
+  #bot input{
+      margin: 10px 0 10px 0;
+      border: 1px solid rgb(236, 236, 236);
+      height: 30px;
+  }

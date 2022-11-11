@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/signUp.css" />
+  </head>
+
+  <body>
+    <div id="navbar">
+      <div>
+        <span class="material-icons menu">menu</span>
+      </div>
+      <div id="MainLogo">
+        <div>
+          <a href="../html/index.html">
+            <img src="../image/shoply.jpg" alt="shoply" />
+          </a>
+        </div>
+      </div>
+      <div id="Search">
+        <input
+          type="text"
+          placeholder="Search essential, groceries, and more..."
+        />
+      </div>
+      <div class="signIn Inside Nav">
+        <span class="material-icons">perm_identity</span>
+        <div class="navBar signin and signup">
+          <div id="signUp" onclick="goToSignIN()">Sign In / Sign Up</div>
+          <div id="ddl">
+            <div id="in"></div>
+            <div id="ddl2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="cart navigationinnerDiv">
+        <span class="material-icons">shopping_cart</span>
+        <div class="navText">Cart</div>
+      </div>
+    </div>
+    
+      <div id="checkSignUp">
+        <form action="" id="form" onsubmit="checkSignIn(event)">
+          <div class="signInText">Sign In</div>
+          <div class="request">Please enter your details</div>
+          <input type="email" placeholder="Enter your Email Id" id="email" />
+          <input type="password" placeholder="Enter your Password" id="password" />
+          <div id="msg">
+            Use 8 or more characters with a mix of letters & numbers
+          </div>
+          <div id="checkBox">
+            <h3><a href="../html/signUP.html">Create New Account ?</a></h3>
+          </div>
+          <input type="submit" class="btn" value="Verify" />
+        </form>
+      </div>
+    </div>
+
+    <script src="../js/signIn.js"></script>
+  </body>
+</html>
