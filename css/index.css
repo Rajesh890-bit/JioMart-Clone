@@ -300,6 +300,25 @@ img {vertical-align: middle;}
 }
 
 
+
+/*......................... Bottom banner section ............ */
+
+
+#bannerBotom{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  margin: 40px 20px;
+}
+
+#bannerBotom div img{
+display: block;
+width: 100%;
+}
+
+
+
 /* ------------------------Footer Start ----------------- */
 
 
