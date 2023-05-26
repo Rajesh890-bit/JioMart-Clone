@@ -17,9 +17,9 @@
 
 
 #MainLogo div img{
-    height: 60px;
+   
     display: block;
-    width: 80%;
+    height: 5rem;
 }
 
 
@@ -58,9 +58,13 @@
 
 #dropDown
 {
-	text-align:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	
 	font-family:helvetica;
 	background-color:lightgray;
+ height: 3rem;
 }
 h1
 {
